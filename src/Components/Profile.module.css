@@ -1,0 +1,9 @@
+.content img  {
+    width: 100%;
+
+}
+
+.content img {
+    grid-area: content;
+    background-color: burlywood;
+}

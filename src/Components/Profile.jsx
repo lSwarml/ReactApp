@@ -1,10 +1,11 @@
 import React from "react";
-
+import c from "./Profile.module.css";
 const Profile = () =>  {
     return (
-        <div className='content'>
+        <div className={c.content}>
             <div>
-                <img className='beckImg' src='https://pattayapeople.ru/wp-content/uploads/2018/03/Plyazh-iz-filma-Plyazh-v-Tailande-zakryvayut-dlya-poseshheniya-1.jpg'/>
+                {/* eslint-disable-next-line jsx-a11y/alt-text */}
+                <img  src='https://pattayapeople.ru/wp-content/uploads/2018/03/Plyazh-iz-filma-Plyazh-v-Tailande-zakryvayut-dlya-poseshheniya-1.jpg' alt=""/>
             </div>
             <div>
                 Logo+ acc
@@ -19,12 +20,12 @@ const Profile = () =>  {
                         post 1
                     </div>
                     <div>
-                        post 1
+                        post 2
                     </div>
                 </div>
             </div>
 
         </div>
     )
-}
+};
 export default Profile;
