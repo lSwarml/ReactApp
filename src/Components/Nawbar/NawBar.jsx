@@ -1,23 +1,29 @@
 import React from "react";
 import b from "./NawBar.module.css";
-const Nawbar = () =>  {
+import {NavLink} from "react-router-dom";
+
+const Nawbar = () => {
     return (
         <nav className={b.sidebar}>
-            <div>
+            <div className={b.item}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href='#'> Profile</a>
+                <NavLink  to='/profile' activeClassName={b.active}> Profile</NavLink>
+            </div >
+            <div className={b.item} >
+                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+                <NavLink to='/dialogs' activeClassName={b.active}> Messages</NavLink>
             </div>
-            <div>
+            <div className={b.item} >
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href='#'> Messages</a>
+                <NavLink to='news' activeClassName={b.active}> News</NavLink>
             </div>
-            <div>
+            <div className={b.item}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href='#'> News</a>
+                <NavLink to='music' activeClassName={b.active}> Music</NavLink>
             </div>
-            <div>
+            <div className={b.item}>
                 {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                <a href='#'> Music</a>
+                <NavLink to ='settings' activeClassName={b.active}> Settings</NavLink>
             </div>
         </nav>
     )

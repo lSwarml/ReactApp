@@ -1,9 +1,5 @@
-.content img  {
+
+.content img {
     width: 100%;
-
-}
-
-.content {
-    grid-area: content;
-    background-color: bisque;
+    height: 300px;
 }

@@ -1,7 +1,8 @@
 import React from "react";
-import c from "./MyPost.module.css";
+// import c from "./MyPost.module.css";
 import Post from "./Post/Post";
-const MyPost = () =>  {
+
+const MyPost = () => {
     return (
         <div>
             my post
@@ -9,7 +10,7 @@ const MyPost = () =>  {
                 New Post
             </div>
             <div>
-                <Post messege='Hello' likeCaunt='3'/>
+                <Post message='Helsdfsdl' likeCaunt='3'/>
                 <Post message='It my ferst post' likeCaunt='2'/>
             </div>
         </div>
