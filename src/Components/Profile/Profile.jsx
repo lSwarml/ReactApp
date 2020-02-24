@@ -1,19 +1,15 @@
 import React from "react";
 import c from "./Profile.module.css";
 import MyPost from "./MyPost/MyPost";
+import Profileinfo from "./ProfileInfo/Profileinfo";
 
-const Profile = () => {
+const Profile = (props) => {
+
+
     return (
         <div className={c.content}>
-            <div>
-                <img
-                    src='https://pattayapeople.ru/wp-content/uploads/2018/03/Plyazh-iz-filma-Plyazh-v-Tailande-zakryvayut-dlya-poseshheniya-1.jpg'
-                    alt=""/>
-            </div>
-            <div>
-                Logo+ acc
-            </div>
-            <MyPost/>
+            <Profileinfo/>
+            <MyPost postData={props.state.postData}/>
         </div>
     )
 };
